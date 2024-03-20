@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/search_box"
+                android:layout_width="262dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="text"
+                android:textColorHint="@color/white"
+                android:hint="Search by ingredients"
+                android:textColor="@color/white"
+                android:backgroundTint="@android:color/white"/>
+
+            <Button
+                android:id="@+id/retrieve_btn"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:text="Retrieve"
+                android:textColor="@color/black"
+                android:backgroundTint="#FFFF99"/>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@color/black"
+                android:backgroundTint="#FFFF99"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/search_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search for a Meal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by name or ingredients"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColorHint="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:textColorLink="@color/white"
+        android:shadowColor="@color/white"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@android:color/white"/>
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/black"
+        android:layout_gravity="end"
+        android:padding="16dp"
+        android:backgroundTint="#FFFF99"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/search_results_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" />
+
+    </ScrollView>
+
+</LinearLayout>
